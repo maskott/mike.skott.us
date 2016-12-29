@@ -3,7 +3,7 @@ layout: null
 ---
 $(document).ready(function () {
   var backgrounds = ['atlanta.jpg', 'marta.jpg', 'power.jpg', 'wheel.jpg', 'leaf.jpg'];
-  $('.panel-cover--background').css('background-image', 'url(/images/' + backgrounds[Math.floor(Math.random() * backgrounds.length)] + ')');
+  $('.panel-cover--background').css('background-image', 'url({{ site.github.url }}/images/' + backgrounds[Math.floor(Math.random() * backgrounds.length)] + ')');
 
   $('a.blog-button').click(function (e) {
     if ($('.panel-cover').hasClass('panel-cover--collapsed')) return
