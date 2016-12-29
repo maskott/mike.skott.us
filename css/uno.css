@@ -1257,7 +1257,7 @@ hr {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: url(../images/cover.jpg);
+	background: transparent;
 	background-size: cover;
 	background-position: center center;
 	background-attachment: fixed;
