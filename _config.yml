@@ -1,0 +1,39 @@
+# Site settings
+title: 'mike.skott.us'
+description: 'my little corner of the web'
+url: 'http://mike.skott.us/'
+baseurl: '/'
+# google_analytics: 'UA-XXXXXX-X'
+# disqus_shortname: 'your-disqus-name'
+
+author:
+  name: 'Mike Skott'
+  email: mike@skott.us
+  twitter_username: maskott
+  facebook_username: maskott
+  github_username: maskott 
+  linkedin_username: mikeskott 
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'post'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+gems: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
