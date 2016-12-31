@@ -3,7 +3,7 @@ title: 'mike.skott.us'
 description: 'my little corner of the web'
 url: 'http://mike.skott.us/'
 baseurl: '/'
-# google_analytics: 'UA-XXXXXX-X'
+google_analytics: 'UA-89628260-1'
 # disqus_shortname: 'your-disqus-name'
 
 author:
@@ -11,14 +11,14 @@ author:
   email: mike@skott.us
   twitter_username: maskott
   facebook_username: maskott
-  github_username: maskott 
-  linkedin_username: mikeskott 
+  github_username: maskott
+  linkedin_username: mikeskott
 
 defaults:
   -
     scope:
       path: ''
-      type: 'post'
+      type: 'posts'
     values:
         layout: 'post'
 
