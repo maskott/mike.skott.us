@@ -1,6 +1,6 @@
 ---
 layout: page
+title: Admin
 ---
-# Admin
 
 This page *should* be password protected.
