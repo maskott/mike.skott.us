@@ -6,7 +6,7 @@ Please log in to access the protected administrative area.
 
 <br />
 <br />
-<form id="login">
+<form id="login" action="{{ '/admin' | prepend: site.github.url }}">
   <table border="0">
     <tr>
       <td><label for="username">Username</label></td>
@@ -22,23 +22,27 @@ Please log in to access the protected administrative area.
   </table>
 </form>
 
+<div id="form_output">0</div>
+
 <script type="text/javascript">
   $(document).ready(function() {
     $('#login').submit(function(event) {
       event.preventDefault();
       var username = $('#username').val();
       var password = $('#password').val();
+      var action   = this.action;
       $.ajax({
         url: "{{ '../admin/key.json' }}",
         beforeSend: function (xhr) {
           xhr.setRequestHeader ("Authorization", "Basic " + btoa(username + ":" + password));
-        }
-      })
-      .done(function( data, status, xhr ) {
-        if (xhr.status == 200) {
-            window.location.href = "../admin";
-        } else {
-            alert("Incorrect username and/or password.");
+        },
+        success: function (data) {
+          $("#form_output").html(data);
+          console.log(data);
+          window.location.href = action;
+        },
+        error: function (jXHR, textStatus, errorThrown) {
+          alert(errorThrown);
         }
       });
     });
