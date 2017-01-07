@@ -37,8 +37,6 @@ Please log in to access the protected administrative area.
           xhr.setRequestHeader ("Authorization", "Basic " + btoa(username + ":" + password));
         },
         success: function (data) {
-          $("#form_output").html(data);
-          console.log(data);
           window.location.href = action;
         },
         error: function (jXHR, textStatus, errorThrown) {
