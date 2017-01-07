@@ -6,7 +6,7 @@ Please log in to access the protected administrative area.
 
 <br />
 <br />
-<form id="login" action="{{ "/admin/" | prepend: site.github.url }}" onsubmit="login()" method="get">
+<form id="login" onsubmit="login()" method="get">
   <table border="0">
     <tr>
       <td><label for="username">Username</label></td>
@@ -23,33 +23,26 @@ Please log in to access the protected administrative area.
 </form>
 
 <script type="text/javascript">
-  function getHTTPObject() {
-    if (typeof XMLHttpRequest != 'undefined') {
-      return new XMLHttpRequest();
-    } try {
-      return new ActiveXObject("Msxml2.XMLHTTP");
-    } catch (e) {
-      try {
-        return new ActiveXObject("Microsoft.XMLHTTP");
-      } catch (e) {}
-    }
-    return false;
-  }
 
   function login() {
-    var this = $('#login');
-    var http = getHTTPObject();
+    var form = $('#login');
     var username = $('#username').value;
     var password = $('#password').value;
-    http.open("get", this.action, false, username, password);
-    http.send("");
-    if (http.status == 200) {
-        // document.location = this.action;
-        alert("Fine.");
-    } else {
-        alert("Incorrect username and/or password.");
-    }
-    return false;
+
+    $.ajax({
+      url: "{{ '/admin/key.json' | prepend: site.github.url }}",
+      beforeSend: function (xhr) {
+        xhr.setRequestHeader ("Authorization", "Basic " + btoa(username + ":" + password));
+      }
+    })
+      .done(function( data, status, xhr ) {
+        if (xhr.status == 200) {
+            window.location.href = "{{ '/admin' | prepend: site.github.url }}";
+        } else {
+            alert("Incorrect username and/or password.");
+        }
+      });
+
   }
 
 </script>
