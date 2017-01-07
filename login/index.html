@@ -26,8 +26,8 @@ Please log in to access the protected administrative area.
   $(document).ready(function() {
     $('#login').submit(function(event) {
       event.preventDefault();
-      var username = $('#username').value;
-      var password = $('#password').value;
+      var username = $('#username').val();
+      var password = $('#password').val();
       $.ajax({
         url: "{{ '../admin/key.json' }}",
         beforeSend: function (xhr) {
