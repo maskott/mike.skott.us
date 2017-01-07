@@ -6,7 +6,7 @@ Please log in to access the protected administrative area.
 
 <br />
 <br />
-<form id="login" onsubmit="login()" method="get">
+<form id="login">
   <table border="0">
     <tr>
       <td><label for="username">Username</label></td>
@@ -23,18 +23,16 @@ Please log in to access the protected administrative area.
 </form>
 
 <script type="text/javascript">
-
-  function login() {
-    var form = $('#login');
-    var username = $('#username').value;
-    var password = $('#password').value;
-
-    $.ajax({
-      url: "{{ '/admin/key.json' | prepend: site.github.url }}",
-      beforeSend: function (xhr) {
-        xhr.setRequestHeader ("Authorization", "Basic " + btoa(username + ":" + password));
-      }
-    })
+  $(document).ready(function() {
+    $('#login').submit(function(event) {
+      var username = $('#username').value;
+      var password = $('#password').value;
+      $.ajax({
+        url: "{{ '/admin/key.json' | prepend: site.github.url }}",
+        beforeSend: function (xhr) {
+          xhr.setRequestHeader ("Authorization", "Basic " + btoa(username + ":" + password));
+        }
+      })
       .done(function( data, status, xhr ) {
         if (xhr.status == 200) {
             window.location.href = "{{ '/admin' | prepend: site.github.url }}";
@@ -42,7 +40,7 @@ Please log in to access the protected administrative area.
             alert("Incorrect username and/or password.");
         }
       });
-
-  }
-
+      event.preventDefault();
+    });
+  });
 </script>
