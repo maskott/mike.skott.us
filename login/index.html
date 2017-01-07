@@ -25,22 +25,22 @@ Please log in to access the protected administrative area.
 <script type="text/javascript">
   $(document).ready(function() {
     $('#login').submit(function(event) {
+      event.preventDefault();
       var username = $('#username').value;
       var password = $('#password').value;
       $.ajax({
-        url: "{{ '/admin/key.json' | prepend: site.github.url }}",
+        url: "{{ '../admin/key.json' }}",
         beforeSend: function (xhr) {
           xhr.setRequestHeader ("Authorization", "Basic " + btoa(username + ":" + password));
         }
       })
       .done(function( data, status, xhr ) {
         if (xhr.status == 200) {
-            window.location.href = "{{ '/admin' | prepend: site.github.url }}";
+            window.location.href = "../admin";
         } else {
             alert("Incorrect username and/or password.");
         }
       });
-      event.preventDefault();
     });
   });
 </script>
