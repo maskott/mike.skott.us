@@ -35,9 +35,7 @@ Please log in to access the protected administrative area.
           xhr.setRequestHeader ("Authorization", "Basic " + btoa(username + ":" + password));
         },
         success: function (data) {
-          setTimeout(function(){
-            window.location.href = window.location.protocol + "//" + username + ":" + password + "@" + window.location.host + "/admin/";
-          }, 1000);
+          window.location.href = window.location.protocol + "//" + username + ":" + password + "@" + window.location.host + "/admin/";
         },
         error: function (jXHR, textStatus, errorThrown) {
           alert(errorThrown);
