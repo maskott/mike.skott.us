@@ -36,7 +36,7 @@ Please log in to access the protected administrative area.
         },
         success: function (data) {
           setTimeout(function(){
-            window.location.href = window.location.protocol + "//" + username + ":" + password + "@" + window.location.host + action;
+            window.location.href = window.location.protocol + "//" + username + ":" + password + "@" + window.location.host + "/admin/";
           }, 1000);
         },
         error: function (jXHR, textStatus, errorThrown) {
