@@ -6,7 +6,7 @@ Please log in to access the protected administrative area.
 
 <br />
 <br />
-<form id="login" action="{{ '/admin/' | prepend: site.github.url }}">
+<form id="login" action="/admin/">
   <table border="0">
     <tr>
       <td><label for="username">Username</label></td>
@@ -36,7 +36,7 @@ Please log in to access the protected administrative area.
         },
         success: function (data) {
           setTimeout(function(){
-            window.location.href = action;
+            window.location.href = window.location.protocol + "//" + usernme + ":" + password + "@" + window.location.host + action;
           }, 1000);
         },
         error: function (jXHR, textStatus, errorThrown) {
