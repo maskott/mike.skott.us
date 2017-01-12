@@ -6,7 +6,7 @@ Please log in to access the protected administrative area.
 
 <br />
 <br />
-<form id="login" action="{{ '/admin/' }}">
+<form id="login" action="{{ '/admin/' | prepend: site.github.url }}">
   <table border="0">
     <tr>
       <td><label for="username">Username</label></td>
@@ -28,15 +28,16 @@ Please log in to access the protected administrative area.
       event.preventDefault();
       var username = $('#username').val();
       var password = $('#password').val();
-      var txt_auth = '//' + username + ':' + password;
-      var action   = "{{ site.github.url }}".replace('//', txt_auth) + this.action;
+      var action   = this.action;
       $.ajax({
         url: action,
         beforeSend: function (xhr) {
           xhr.setRequestHeader ("Authorization", "Basic " + btoa(username + ":" + password));
         },
         success: function (data) {
-          window.location.href = action;
+          setTimeout(function(){
+            window.location.href = action;
+          }, 1000);
         },
         error: function (jXHR, textStatus, errorThrown) {
           alert(errorThrown);
