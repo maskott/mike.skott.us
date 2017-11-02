@@ -5,7 +5,7 @@ categories: [tech]
 tags: [web, bitcoin]
 ---
 
-It's been a few months since I really started wondering about Bitcoin. Of course as an avid user of the Interwebs and a general computer nerdist, I had heard of Bitcoin for a few years. Then a new friend at work asked if I had any and was frequently commenting on prices of a few altcoin. A few months ago I honestly didn't know there were other digital currencies than Bitcoin and after initially reading up and researching how one even acquires digital currency, I decided to take the plunge.
+It's been a few months since I really started wondering about Bitcoin. Of course as an avid user of the Interwebs and a general computer nerdist, I had heard of Bitcoin for a few years. Then a new friend at work asked if I had any and was frequently commenting on prices of a few altcoin. A few months ago I honestly didn't know there were digital currencies other than Bitcoin and after initially reading up and researching how one even acquires digital currency all the while watching the price fluctuate, I decided to take the plunge.
 
 I took $1,000 USD and on September 18th, 2017 exchanged it for 18.1 LTC - Litecoin. Only weeks later, I am not entirely certain why I chose this particular altcoin, and as of this writing the value against my dollar is slightly down. To be precise, I purchased at $55.25 USD / LTC and tonight we are at around $52. Frankly, the volatility of these markets is stomach churning. In the short time I have owned these LTC, they have had a high of ~$70 to a low of ~$45.
 
