@@ -15,6 +15,10 @@ Here I am a little over a month later and I have steadily been exploring and rea
 
 My dad didn't understand and knee jerked against it, and towards caution. I completely agree I want to be sensible, but tonight I have been bit by the coin and I can hardly sleep. I finally understand FOMO and I just want to buy and HODL! I don't want to make a habit of publishing every time I buy a currency, but this is a first step for me and I thought it may prove interesting to come back to as a reference some day in the future. I will update this post when the money clears and the price determines how much BTC I can purchase at the point I decide to pull the trigger.
 
+> Update: 2017/11/3 <br/>
+~0.1379 BTC for $1,000 USD<br />
+(1 BTC = $7250.01 USD)
+
 So far, some of my favorite resources have come from the newbie posts on Reddit at [/r/Bitcoin](https://www.reddit.com/r/Bitcoin/). As I listened to Andreas Antonopoulos' [Intro to Bitcoin](https://www.youtube.com/watch?v=qkxdys-Ek9U) and [How Bitcoin Mining Works](https://www.youtube.com/watch?v=QBFNaCNlBdk&t=79s) I just keep getting sucked further in to how this _is_ the next thing. I really loved his analogy of Bitcoin mining being like solving sudoku puzzles. When I think of how cheap technology will allow billions of people who never had access or ability to use what-I-think-of-as-money in the ways I traditionally think of money being used, I can only imagine Bitcoin’s recent meteoric rise is only the beginning.
 
 For me, Bitcoin has intrinsic value because it solves so many of the problems inherent in all previous forms of money. I think for a while yet, we will only begin to scratch the surface of what this revolution will be capable of because we aren't used to thinking outside the constraints of the way we think of money. I remember a college economics professor of mine arguing that a digital currency will never be a reality because someone could hack your account and zero your balance. It makes me kind of happy to look back thinking of all of the traditional ways people can lose or destroy traditional money that will be completely eliminated or moot with the coming ways.
