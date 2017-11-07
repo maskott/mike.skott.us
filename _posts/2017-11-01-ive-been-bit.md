@@ -1,5 +1,5 @@
 ---
-title:  "I've Been ₿it"
+title:  "I've Been ฿it"
 date:   2017-11-01 23:54:58
 categories: [tech]
 tags: [web, bitcoin]
