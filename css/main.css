@@ -13,7 +13,7 @@ pre.highlight code,
   white-space: pre-wrap;
 }
 
-.btn, 
+.btn,
 .navigation__item a {
   margin: 5px 0;
   white-space: nowrap;
@@ -49,8 +49,8 @@ pre.highlight code,
 .user-image {
   margin-bottom: 1.2em;
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 140px;
+  height: 140px;
   border: 3px solid #fff;
   border-radius:100%;
 }
@@ -66,12 +66,12 @@ pre.highlight code,
       -ms-animation-fill-mode: forwards;
        -o-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-} 
+}
 
 .user-image:hover {
   -webkit-animation: pulse 1s; /* Safari, Chrome and Opera > 12.1 */
      -moz-animation: pulse 1s; /* Firefox < 16 */
       -ms-animation: pulse 1s; /* Internet Explorer */
        -o-animation: pulse 1s; /* Opera < 12.1 */
-          animation: pulse 1s; 
+          animation: pulse 1s;
 }
