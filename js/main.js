@@ -2,8 +2,7 @@
 layout: null
 ---
 $(document).ready(function () {
-  var backgrounds = ['atlanta.jpg', 'marta.jpg', 'power.jpg', 'wheel.jpg', 'leaf.jpg'];
-  $('.panel-cover--background').css('background-image', 'url({{ site.github.url }}/images/' + backgrounds[Math.floor(Math.random() * backgrounds.length)] + ')');
+  $('.panel-cover--background').css('background-image', 'url(https://source.unsplash.com/collection/8823888/1280x853)');
 
   if (window.location.pathname == '{{ site.baseurl }}' || window.location.pathname == '{{ site.baseurl }}index.html' || window.location.href == '{{site.github.url}}/') {
   $('a.blog-button').click(function (e) {
