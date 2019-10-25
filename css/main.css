@@ -55,7 +55,7 @@ pre.highlight code,
   border-radius:100%;
 }
 
-.user-image-loader {
+/*.user-image-loader {
   -webkit-animation: flipInY 1s; /* Safari, Chrome and Opera > 12.1 */
      -moz-animation: flipInY 1s; /* Firefox < 16 */
       -ms-animation: flipInY 1s; /* Internet Explorer */
@@ -74,4 +74,4 @@ pre.highlight code,
       -ms-animation: pulse 1s; /* Internet Explorer */
        -o-animation: pulse 1s; /* Opera < 12.1 */
           animation: pulse 1s;
-}
+}*/

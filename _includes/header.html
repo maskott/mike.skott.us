@@ -8,12 +8,14 @@
 
     <div class="panel-main__inner panel-inverted">
     <div class="panel-main__content">
+      <div data-tilt data-tilt-scale="1.1" data-tilt-reverse="true" style="transform-style: preserve-3d; transform: perspective(1000px);">
         <a href="{{ site.github.url }}/">
-	  <div class="user-image-loader">
+      	  <div style="transform: translateZ(20px);">
             <img src="{{ "/images/mike_skott.gif" | prepend: site.github.url }}" class="user-image" alt="Mike Skott">
-	  </div>
+      	  </div>
           <h1 class="panel-cover__title panel-title">{{ site.title }}</h1>
         </a>
+      </div>
         <hr class="panel-cover__divider">
         <p class="panel-cover__description">{{ site.description }}</p>
         <hr class="panel-cover__divider panel-cover__divider--secondary">
