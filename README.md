@@ -8,4 +8,4 @@ I've been SSHing into the [CHIP computer](https://getchip.com/) I'm serving this
 ### 👉 Also remember:
 
 - That CHIP computer is pretty minimal, so the 🕰 is always getting out of date. The command you are looking for is `sudo ntpdate -u time.nist.gov`, and you've already aliased it as `setclock`. 💥
-- The SSL cert can sometimes get out of date, so everything you need to renew it and then restart Nginx is already aliased for you as `getcert`. 
+- The SSL cert can sometimes get out of date, so everything you need to renew it and then restart Nginx is already aliased for you as `getcert`. 😎
