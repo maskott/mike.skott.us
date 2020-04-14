@@ -1,5 +1,5 @@
 ---
-title:  "Time Flys 🕰"
+title:  "Time Flies 🕰"
 date: 2020-04-06 10:52:37
 categories: [tech]
 tags: [web, javascript, vuejs, css, design]
@@ -7,7 +7,7 @@ tags: [web, javascript, vuejs, css, design]
 
 A lot of things have happened in the last few months that have me thinking deeply about time. One of my best friends passed away unexpectedly and I have been quite consumed with thoughts of our conversations and time together before his death. Now the COVID-19 (Corona virus) pandemic finds me unemployed and with an abundance of newfound time with my family at home.
 
-> Time flys like an arrow; Fruit flys like a banana.
+> Time flies like an arrow; fruit flies like a banana.
 
 I have been experimenting and learning more with [Vue.js](https://vuejs.org/) as I really prefer it as a front-end javascript framework over others I have used. I was showing one of my experiments to my son and he reminded me of a codepen I created a few months ago that I had completely forgotten. Check out this analog clock I made completely with HTML, SCSS, and Vue.
 
